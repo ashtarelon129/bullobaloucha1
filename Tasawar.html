@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="B.png" type="image/x-icon">
+    <title>Tasawar Khan</title>
+    <style>
+      /*Now the CSS*/
+* {margin: 0; padding: 0;}
+body{
+  background-image: url("wallpaper.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media only screen and  (max-width:2100px) 
+{
+  body {
+    width: 1400px;
+    background-image: url("wallpaper.jpg");
+    background-size: 2100px;
+    background-position: center;
+  }
+}
+.tree ul {
+	padding-top: 20px; position: relative;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+}
+
+.tree li {
+	float: left; text-align: center;
+	list-style-type: none;
+	position: relative;
+	padding: 20px 5px 0 5px;
+	
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+}
+
+/*We will use ::before and ::after to draw the connectors*/
+
+.tree li::before, .tree li::after{
+	content: '';
+	position: absolute; top: 0; right: 50%;
+	border-top: 1px solid #ccc;
+	width: 50%; height: 20px;
+}
+.tree li::after{
+	right: auto; left: 50%;
+	border-left: 1px solid #ccc;
+}
+
+/*We need to remove left-right connectors from elements without 
+any siblings*/
+.tree li:only-child::after, .tree li:only-child::before {
+	display: none;
+}
+
+/*Remove space from the top of single children*/
+.tree li:only-child{ padding-top: 0;}
+
+/*Remove left connector from first child and 
+right connector from last child*/
+.tree li:first-child::before, .tree li:last-child::after{
+	border: 0 none;
+}
+/*Adding back the vertical connector to the last nodes*/
+.tree li:last-child::before{
+	border-right: 1px solid #ccc;
+	border-radius: 0 5px 0 0;
+	-webkit-border-radius: 0 5px 0 0;
+	-moz-border-radius: 0 5px 0 0;
+}
+.tree li:first-child::after{
+	border-radius: 5px 0 0 0;
+	-webkit-border-radius: 5px 0 0 0;
+	-moz-border-radius: 5px 0 0 0;
+}
+
+/*Time to add downward connectors from parents*/
+.tree ul ul::before{
+	content: '';
+	position: absolute; top: 0; left: 50%;
+	border-left: 1px solid #ccc;
+	width: 0; height: 20px;
+}
+
+.tree li a{
+	border: 2px solid #ccc;
+	padding: 5px 10px;
+	text-decoration: none;
+	color:rgb(207, 198, 217);
+	font-family: arial, verdana, tahoma;
+	font-size: 11px;
+	display: inline-block;
+	
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+}
+
+/*Time for some hover effects*/
+/*We will apply the hover effect the the lineage of the element also*/
+.tree li a:hover, .tree li a:hover+ul li a {
+	background:  rgb(122, 16, 204);;  border: 1px solid #695f5f;
+}
+/*Connector styles on hover*/
+.tree li a:hover+ul li::after, 
+.tree li a:hover+ul li::before, 
+.tree li a:hover+ul::before, 
+.tree li a:hover+ul ul::before{
+	border-color:  #d7dce6;
+}
+
+/*Thats all. I hope you enjoyed it.
+Thanks :)*/
+    </style>
+</head>
+<body>
+    <div class="tree">
+        <ul>
+         <li>
+        <a href="#">Bajar Khan</a>
+          <ul>
+             
+                  <a href="#">Babak khan</a>
+                  <ul>
+                      <li>     
+                  <a href="#">Bullo</a>
+                  <li>         
+                    <a href="#">Laawal</a>
+    
+                      
+                      <li>
+                          <a href="#">Mehran Khan</a>
+                          <ul>  
+                            <li>
+                    <a href="#">Sheikho</a>
+                              <li>
+                    <a href="#">Sadiq</a>
+                              <ul>
+                                <li>
+                      <a href="#">Roshan</a>
+                              <li>
+                                  <a href="#">Bahadur</a>
+                                  <ul>
+                                          <a href="#">Dildaar</a>
+                                      <ul>
+                                          <a href="#">Alif</a>
+                                 <ul>
+                                          <a href="#">Jaahan</a>
+                                    <ul>
+                                     <li>
+                                          <a href="#">Fateh</a>
+                                      <li>
+                                           <a href="#">Nawab </a>
+                                      <li>
+                                           <a href="#">Shurab</a> 
+                                      <ul>
+                                        <li>
+                                       <a href="#">Jannan</a>
+                                       <ul>
+                                        <li>
+                                          <a href="#">Muhammad</a>
+                                          <li>
+                                            <a href="#">Dildaar</a>
+                                            <li>
+                                              <a href="#">Laal</a>
+                             
+                             
+                               <li>
+                                <a href="#">Allahyaar</a>
+                                 <ul>
+                                   <li>
+                               
+                                <a href="#"> Ameer </a> 
+                                   <ul>
+                                     <li>
+                                 
+                                  <a href="#">Ali </a> 
+                                     <li>
+                                       <a href="#"> Matah </a>
+                                   <li>
+                                    <a href="#">Atah </a>
+                                    <ul>
+                                      <li>
+                                        <a href="#"> Manzoor </a>
+                                       <li>
+                                      <a href="#"> Talib </a> 
+                                                 <ul>
+                                              <li>
+                                                <a href="#">Aftab</a>
+                                                  <li>
+                                      <a href="#"> Iltaaf </a>
+                                     <li>
+                                      <a href="#">Tasawar</a>
+                                      <ul>
+                                        <li>
+                                          <a href="#">Ahmad</a>
+                                          <li>
+                                            <a href="#">Zaheer</a>
+                                            <li>
+                                              <a href="#">Jugunu</a>
+                                              <ul>
+                                                <a href="#">Asghar</a>
+                                                </ul>
+                                        </li>
+                                      </ul>
+                                              
+                                            
+                                                
+
+                                       
+                                                
+                                                            
+                        
+      </div>

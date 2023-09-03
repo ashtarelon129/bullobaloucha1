@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="B.png" type="image/x-icon">
+<title> Family Tree</title>
+<style>
+* {box-sizing: border-box}
+body, html
+ {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.tablink {
+  background-color: rgba(113, 16, 142, 0.443);
+  color: rgb(207, 198, 217);;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+  margin-right: 70px;
+}
+@media only screen and  (max-width:800px) { 
+  body{
+    width: 800px;
+  }
+ .tablink {
+      margin-right: 30px;
+      padding-right: 20px;
+  }
+ .box,.select{
+ margin-left: -120px;
+ margin-top: 480px;
+  }
+  .box1,.select{
+    margin-left:-120px;
+    margin-top: 250px;
+  }
+}
+
+.tablink:hover {
+  background-color: rgb(34, 20, 20);
+}
+.tabcontent {
+  color:  rgba(122, 16, 204, 0.729);;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+#Home {background-image: url("wallpaper.jpg");
+background-repeat: no-repeat;
+background-position:center; 
+background-size: cover;}
+#News {background-image: url("wallpaper.jpg");
+background-repeat: no-repeat;
+background-position:center; 
+background-size: cover;}
+#Contact {background-image: url("wallpaper.jpg");
+background-repeat: no-repeat;
+background-position:center; 
+background-size: cover;}
+   
+  select {
+  width: 300px;
+  padding: 12px;
+  border: 0 !important;
+  background-color:  rgba(122, 16, 204, 0.729);
+  border: 2px black solid;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2212%22%20height%3D%2212%22%20viewBox%3D%220%200%2012%2012%22%3E%3Ctitle%3Edown-arrow%3C%2Ftitle%3E%3Cg%20fill%3D%22%23000000%22%3E%3Cpath%20d%3D%22M10.293%2C3.293%2C6%2C7.586%2C1.707%2C3.293A1%2C1%2C0%2C0%2C0%2C.293%2C4.707l5%2C5a1%2C1%2C0%2C0%2C0%2C1.414%2C0l5-5a1%2C1%2C0%2C1%2C0-1.414-1.414Z%22%20fill%3D%22%23000000%22%3E%3C%2Fpath%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+    background-size: .6em;
+    background-position: calc(100% - 1.3em) center;
+    background-repeat: no-repeat;
+}
+select::-ms-expand {
+    display: none;
+}
+.h1{
+  font-style: italic;
+  display: flex;
+  color: rgb(207, 198, 217);
+  text-decoration: underline;
+}
+.box{
+  position: absolute;
+  left: 33%;
+ top: 100.5px;
+}
+.box1{
+  position: absolute;
+  left: 33%;
+  top: 220px;
+}
+marquee{
+  background-color: transparent;
+  height: 15px;
+  font-size: small;
+}
+</style>
+</head>
+<body>
+  <marquee behavior="slow">IF I MISSED SOMEONE IN FAMILY TREE THEN CONTACT ME ON +923011453590 | اگر کوئی فیملی ٹری میں نہیں ہے تو مجھ سے +923011453590 پر رابطہ کریں۔</marquee>
+<button class="tablink" onclick="openPage('Home', this, '')" id="defaultOpen">Jannan Daay</button>
+<button class="tablink" onclick="openPage('News', this, '')">AllahDaad </button>
+<button class="tablink" onclick="openPage('Contact', this, '')">Muhammad Yaar</button>
+<div id="Home" class="tabcontent">
+  <div class="h1"><h1> ALI KHAN FAMILY</h1> </div>
+<select  name="test" aria-invalid="false" onchange="location=this.value">
+  <optgroup label="Aurangzaib Khan">
+    <option value="safdar.html">Safdar Khan</option>
+    <option value="mithu.html">Zeeshan Haider</option>
+    <option value="zain.html">Zain Haider</option>
+    <option value="moiz.html">Moiz Haider</option>
+    <option value="fazal.html">Fazal Abbas</option>
+    <option value="sheri.html">Sheriyar Abbas</option>
+    <option value="muzammil.html">Muzammil Abbas</option>
+    <option value="khizer.html">Khizer Abbas</option>
+    <option value="liaquat.html">Liaquat Ali</option> 
+    <option value="ahsan.html" >Ahsan Liaquat  </option>  
+<optgroup label="Ghulam Abbas">
+  <option value="akhtar.html">Akhtar Jaffery</option>
+  <option value="adeel.html">Adeel Akhtar</option>
+  <option value="faraz.html">Faraz Akhtar</option>
+  <option value="raheel.html">Raheel Akhtar</option>
+  <option value="yesrib.html">Yesrib Ali</option>
+  <option value="faheem.html">Faheem Ali</option>
+  <option value="yameen.html">Yameen Ali</option>
+  <option value="malik.html">Malik Ashtar</option>
+  <option value="hamza.html">Hamza Ashtar</option> 
+  <option value="aqeel.html" > Aqeel Abbas </option> 
+  <option value="muslim.html" > Muslim bin Aqeel </option> 
+  <optgroup label="Ghulam Mehdi">
+    <option value="muntazir.html">Muntazir Mehdi</option>
+    <option value="ibrahim.html">Ibrahim Mehdi</option>
+    <optgroup label="Ghulam Kazim">
+      <option value="zeeshan.html">Zeeshan Haider</option>
+      <option value="kamran.html">Kamran Haider</option>
+      <option value="hussain.html">Hussain Haider</option>
+      <option value="mustafa.html">Mustafa Haider</option>
+</select> 
+</optgroup>
+  <div class="h1"><h1> ATAH KHAN FAMILY</h1> </div>
+<select name="test" aria-invalid="false" onchange="location=this.value">
+  <optgroup label="Mumtaz Khan">
+  <option value="sajjad.html">Sajjad Khan</option>
+  <option value="hani.html">Hani Hassan</option>
+  <option value="kumail.html">Kumail Hassan</option>  
+  <option value="shoaib.html">Shoaib Khan</option>
+  <option value="bilal.html">Bilal Khan</option>
+  <option value="yasir.html">Yasir Khan</option>   
+  <option value="awais.html">Awais Khan</option>
+  <option value="salman.html">Salman Khan</option>
+  <option value="zahoor.html">Zahoor Khan</option>
+  <option value="asad.html">Asad Zahoor</option>
+  <option value="ali.html">Ali Akbar</option>
+  <option value="haider.html">Haider Ali</option>
+  <option value="nana.html">Zulqarnain Khan</option>
+  <option value="sheroz.html">Sheroz Khan</option>
+  </optgroup>
+  <optgroup label="Aijaaz Khan">
+  <option value="asif.html">Asif Khan</option>
+  <option value="izan.html">Izan Abbas</option>
+  <option value="murtajiz.html">Murtazjiz Hussain</option>
+  <option value="tahir.html">Tahir Khan</option>
+  <option value="mamnoon.html">Mamnoon Hussain</option>
+  <option value="zainul.html">Zain ul Abadin</option>
+  <option value="zaheer.html">Zaheer Khan</option>
+  <option value="musa.html">Musa Raza </option>
+  </optgroup>
+  </select> 
+  <div class="h1"><h1> MATAH KHAN FAMILY</h1> </div>
+  <select name="test" aria-invalid="false" onchange="location=this.value">
+  <optgroup label="Talib Khan">
+    <option value="aftab.html">Aftab Khan</option>
+    <option value="tipu.html">Muhammad Ali</option>
+    <option value="hassan.html">Hassan Ali</option>
+    <option value="shozab.html">Shozab Ali</option>
+    <option value="iltaaf.html">Iltaaf Khan</option>
+    <option value="mohib.html">Mohib Ali</option>
+    <option value="tasawar.html">Tasawar Khan</option>
+    <option value="ahmad.html">Ahmed Khan</option>
+    <option value="zaheeeer.html">Zaheer Khan </option>
+    <option value="jugunu.html">Jugunu Khan</option>
+    <option value="asghar.html">Asghar Ali</option>
+  <optgroup label="Manzoor Khan">
+    <option value="afzal.html"> Afzal Khan</option>
+    <option value="shajar.html">Shajar Abbas</option>
+    <option value="momin.html">Momin Abbas</option>
+    <option value="farukh.html">Farukh Khan</option>
+    <option value="intezar.html">Intezaar Hussain</option>
+    <option value="imtiaz.html">Imitiaz Khan</option>
+    <option value="mazhar.html">Mazhar Khan</option>
+    <option value="aqel.html">Aqeel Khan</option>
+    <option value="mehdi.html">Mehdi Ali</option>
+    <option value="alii.html">Ali Haider</option>
+    <option value="murtaza.html">Murtaza Haider</option>
+    <option value="abd.html">Abdullah Alamroof</option>
+    <option value="adel.html">Adeel Khan</option>
+    <option value="sheriyaar.html"> Muhammad Sheriyaar</option>
+  </optgroup> 
+  </select> 
+  <br> 
+  <div class="h1"><h1> NADIR KHAN FAMILY</h1> </div>
+  <select name="test" aria-invalid="false" onchange="location=this.value" > 
+    <optgroup label="Ashiq Khan">
+      <option value="mukhtar.html">Mukhtar Khan</option>
+      <option value="chhaasan.html">Hassan Khan</option>
+      <option value="nadir.html"> Nadir Khan</option>
+      <option value="hussain1.html"> Hussain Mukhtar</option>
+    </select>
+</div>
+<div id="News" class="tabcontent">
+  <div class="h1"><h1> JEEWAN KHAN FAMILY</h1> </div>
+  <select name="test" aria-invalid="false" onchange="location=this.value">
+    <optgroup label="Ameer Khan">
+      <option value="hasnain.html">Muhammad Hussain</option>
+      <option value="hadi.html">Hadi Khan</option>
+      <option value="nasir.html">Nasir Khan</option>
+      <option value="bhaii.html">Ali Haider</option>
+    </select> <br> 
+    <div class="h1"><h1> GHULAM MUHAMMAD FAMILY</h1> </div>
+<select name="test" aria-invalid="false" onchange="location=this.value">
+<optgroup label="Abid Khan">
+    <option value="abu.html">Abu ul hassan</option>
+    <option value="abuzar.html">Abuzar Hussain</option>
+    <option value="kasim.html">Kasim Hussain</option>
+    <option value="qais.html">Qais Khan</option>
+    <option value="zameer.html">Zameer ul Hassan</option>
+    <option value="murtii.html">Ali Murtaza</option>
+    <option value="shams.html">Shams ul Hassan</option>
+    <option value="ahmed.html">Ahmed Hassan</option>
+    <option value="alih.html">Ali Hassan</option>
+    <option value="bro.html">Mehdi Hassan </option>
+    <option value="naseer.html">Naseer ul Hassan</option>
+    <option value="wafa.html">Wafa Abbas</option>
+    <option value="irtaza.html">Irtaza Abbas</option>
+    <optgroup label="Jaffar Khan">
+      <option value="chachu.html">Husnain Khan</option>
+      <option value="naeem.html">Naeem ul Hasnain</option>
+      <option value="wasim.html"> Wasim ul Hasnain</option>
+      <option value="jaffar.html"> Jaffar Wasim</option>
+      <option value="misam.html">Misam Tamar</option>
+      <option value="abbas.html">Muhammad Abbas</option>
+      <option value="akmal.html">Akmal Khan </option>
+      <option value="sajjid.html">Sajjid Khan</option>
+      <option value="askari.html">Hassan Askari</option>
+      <option value="shahid.html">Hussain Shahid</option>
+      <option value="chtahir.html">Tahir Khan</option>
+      <option value="mujtaba.html">Mujtaba Tahir</option>
+  </select> <br> <br> <br>
+</div>
+<div id="Contact" class="tabcontent">
+  <div class="h1"><h1> HAYAT KHAN FAMILY</h1> </div>
+    <select name="test" aria-invalid="false"  onchange="location=this.value">
+      <optgroup label="Afzal Khan">
+        <option value="imran.html">Imran Khan</option>
+        <option value="aliyan.html">Aliyan Haider</option>
+        <option value="kashan.html">Kashan Haider</option>
+        <optgroup label="khurshaid Khan">
+          <option value="ashraf.html">Muhammad Ashraf</option>
+          <option value="zain2.html">Zain Ashraf</option>
+      </optgroup>
+      </select>
+      <div class="h1"><h1> SARWAR KHAN FAMILY</h1> </div>
+    <select name="test" aria-invalid="false"  onchange="location=this.value">
+      <optgroup label="Hakam Khan">
+        <option value="jaffarm.html">Ali Jaffar</option>
+        <option value="naeemm.html">Naeem Jaffar</option>
+        <option value="wasimm.html">Wasim Jaffar</option>
+        <option value="yasirm.html">Yasir Jaffar</option>
+       <option value="mehdim.html">Ali Mehdi</option>
+       <option value="jawad.html">Jawad Mehdi</option>
+       <option value="zohan.html">Zohan Jawad</option>
+       <option value="muhammad.html">Muhammad Jawad</option>
+       <option value="fahad.html">Fahad Mehdi</option>
+       </optgroup>
+    </select>
+    <div class="h1"><h1> ASGHAR KHAN FAMILY</h1> </div>
+    <select name="test" aria-invalid="false"  onchange="location=this.value">
+      <optgroup label="Fazal Khan">
+        <option value="Hasssan.html">Hassan Fazal</option>
+        <optgroup label="Kosar Khan">
+        <option value="shoukat.html">Shoukat Khan</option>
+        <option value="zaeem.html">Zaeem Shoukat</option>
+        <option value="karam.html">Karam Khan</option>
+        <option value="azan.html">Azan Karam</option>
+        <optgroup label="Manzoor Khan">
+       <option value="mudasir.html">Mudassir Manzoor</option>
+       <option value="asgharm.html">Asghar Mudassir</option>
+       <option value="musawar.html">Musawar Manzoor</option>
+       </optgroup>
+    </select>
+    <div class="box">
+    <div class="h1" ><h1>SARWAR HAKAM KHAN FAMILY</h1> </div>
+    <select name="test" aria-invalid="false"  onchange="location=this.value">
+      <optgroup label="Sajjad Khan">
+        <option value="ghulam.html">Ghulam Hussain</option>
+        <option value="ghaour.html">Ghaour Hussain</option>
+        <option value="zahoorm.html">Zahoor Hussain</option>
+        <option value="hussainm.html">Muhammad Hussain</option>
+        <option value="taimoor.html">Taimoor Hussain</option>
+      </optgroup>
+    </select>
+    </div>
+    <div class="box1">
+    <div class="h1"><h1>SHER KHAN FAMILY</h1> </div>
+    <select name="test" aria-invalid="false"  onchange="location=this.value">
+      <optgroup label="Sitar Khan">
+        <option value="shahzaib.html">Shahzaib Ali</option>
+        <option value="naadaye.html">Nadaye Ali</option>
+        <option value="moizm.html">Moiz Ali</option>
+        <option value="jabar.html">Jabar Ali</option>
+        <option value="ghazi.html">Ghaziyan Ali</option>
+        <option value="ahad.html">Ahad Ali</option>
+      </optgroup>
+    </select>
+    </div>
+    </div>
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+</body>
+</html> 
