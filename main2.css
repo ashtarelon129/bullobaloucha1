@@ -22,13 +22,10 @@ body {
     margin: 0%;
     overflow-x: hidden;
   }
-  .header{
-    color:rgb(2, 1, 14) ;
   li, a{
   margin-left: -15px;
   font-size: 10px;
   }
-
 }
 
 header {
