@@ -14,6 +14,15 @@ body{
 .faq__body{
            margin-top: -100px;
 }
+@media only screen and  (max-width:1200px)   {
+    html,body{
+      width: 100%;
+      height: 100%;
+      padding:0;
+      margin:0;
+      overflow-x: hidden;
+    }
+}
 .faq_header-title{
     font-size: 24px;
     color: rgb(122, 16, 204);
